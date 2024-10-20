@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './Country.css'
 
-const Country = ({ country }) => {
+const Country = ({ country, handleVisitedCountry}) => {
     const {flags, name, population, region} = country
     const capital = country.capital ? country.capital[0] : 'N/A'
 
@@ -23,6 +23,9 @@ const Country = ({ country }) => {
             <br />
             <br />
             <button onClick={handleVisited}>{Visited ? 'Visited' : 'Going'}</button>
+            <br />
+            <br />
+            <button onClick={() => handleVisitedCountry(name.common)}>Bookmark as Visited</button>
         </div>
     );
 };
