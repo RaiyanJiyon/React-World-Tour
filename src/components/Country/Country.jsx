@@ -13,9 +13,9 @@ const Country = ({ country, handleVisitedCountry}) => {
     }
 
     return (
-        <div className='country'>
+        <div className={`country ${Visited ? 'visited-background' : 'no-bg'}`}>
             <img style={{width: '200px', height: '100px'}} src={flags.png} alt="{flags.png} flag" />
-            <h2>Name: {name.common}</h2>
+            <h2 style={{color : Visited? 'skyblue' : 'black'}}>Name: {name.common}</h2>
             <h3>Capital: {capital}</h3>
             <h3>Population: {population}</h3>
             <h3>Region: {region}</h3>
