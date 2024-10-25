@@ -49,7 +49,7 @@ This project is a simple **React.js-based web application** that provides a comp
    npm start
    ```
 
-5. Open your browser and go to `https://magenta-unicorn-216ad3.netlify.app/` to view the app.
+5. Open your browser and go to `http://localhost:3000` to view the app.
 
 ## Future Enhancements
 
